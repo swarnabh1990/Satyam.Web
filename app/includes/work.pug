@@ -1,2 +1,22 @@
-section#work.stretch
-      .section-header OUR WORK
+section#work.section
+      //- .skyline
+      .container-fluid
+        .row.main
+            .col-xs-12.col-md-8.img-pane
+                  #work-photos
+                        - var counter = 0;
+                        each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+                              - counter++;
+                              img(src = "../images/work/img" + val + ".jpg" onclick="openModal();currentSlide(" + (counter) +")")
+                        each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+                              - counter++;
+                              img(src = "../images/work/work" + val + ".jpg" onclick="openModal();currentSlide(" + (counter) +")")
+                  
+            .col-xs-12.col-md-4.head-pane
+                .content
+                    .section-header Work Portfolio
+                    h4.tag <strong>Valuable Acomplishments</strong>
+                    h3.text A brief look at what amazing stuff we have been doing with our partners. These are some of our recent projects.
+
+     
+                        

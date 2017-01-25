@@ -10,21 +10,24 @@ html.no-js(lang='')
         a(href='http://browsehappy.com/') upgrade your browser
         |  to improve your experience.
 
-    include includes/navBtns.pug
+    #full-page
+      include includes/navBtns.pug
 
-    include includes/intro.pug
+      include includes/lightbox.pug
 
-    include includes/history.pug
+      include includes/intro.pug
 
-    include includes/about.pug
-    
-    include includes/services.pug
+      include includes/about.pug
+
+      include includes/products.pug
       
-    include includes/work.pug
+      include includes/services.pug
 
-    include includes/clients.pug
+      include includes/clients.pug
+        
+      include includes/work.pug
 
-    include includes/footer.pug   
+      include includes/footer.pug   
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
@@ -54,6 +57,7 @@ html.no-js(lang='')
     script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
     script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
     // endbuild
+    script(type="text/javascript" src="/bower_components/fullPage.js/dist/jquery.fullPage.js")
     // build:js scripts/main.js
     script(src='scripts/main.js')
     // endbuild
