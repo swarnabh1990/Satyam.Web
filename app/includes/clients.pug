@@ -1,13 +1,13 @@
-section#clients.stretch
+section#clients.section
       .container
             .section-header Our Partners
 
-            .carousel.slide(data-ride = "carousel" id = "clients-carousel" data-interval = "2500" data-pause = "null")
+            .carousel.slide.carousel-fade(data-ride = "carousel" id = "clients-carousel" data-interval = "5000" data-pause = "hover")
                   .carousel-inner(role="listbox")
                         .item.active
                               .clients-grid.page1
                               
-                                    .row
+                                    .row.first
                                           .col-xs-3
                                                 .clientImg(style="background-image: url(../images/pacific-dehradun-logo.png)")
                                           .col-xs-3
@@ -47,7 +47,7 @@ section#clients.stretch
                                           .col-xs-3
                                                 .clientImg(style="background-image: url(../images/adiva-logo.png)")
 
-                                    .row
+                                    .row.last
                                           .col-xs-3
                                                 .clientImg(style="background-image: url(../images/frontier-bazar-logo.png)")
                                           .col-xs-3
@@ -59,7 +59,7 @@ section#clients.stretch
 
                         .item
                               .clients-grid.page2
-                                    .row
+                                    .row.first
                                           .col-xs-3
                                                 .clientImg(style="background-image: url(../images/calvin-klein-logo.png)")
                                           .col-xs-3
@@ -99,7 +99,7 @@ section#clients.stretch
                                           .col-xs-3
                                                 .clientImg(style="background-image: url(../images/garnier-logo.png)")
 
-                                    .row
+                                    .row.last
                                           .col-xs-3
                                                 .clientImg(style="background-image: url(../images/atlas-logo.jpg)")
                                           .col-xs-3
